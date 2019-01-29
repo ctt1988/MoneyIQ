@@ -4,7 +4,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { PersonalFinancePage } from '../pages/personal-finance/personal-finance';
+import { InvestingPage } from '../pages/investing/investing';
+import { EconomicsPage } from '../pages/economics/economics';
+import { RetirementPage } from '../pages/retirement/retirement';
+import { RealEstatePage } from '../pages/real-estate/real-estate';
+
 
 @Component({
   templateUrl: 'app.html'
