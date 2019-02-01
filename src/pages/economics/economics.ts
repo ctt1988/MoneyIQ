@@ -37,7 +37,7 @@ export class EconomicsPage {
     console.log('ionViewDidLoad EconomicsPage');
   }
 
-    openPage() {
+  getNewCard() {
     console.log('new flashcard loaded');
     this.navCtrl.setRoot(this.navCtrl.getActive().component);
   }

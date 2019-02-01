@@ -37,7 +37,7 @@ export class RealEstatePage {
     console.log('ionViewDidLoad RealEstatePage');
   }
 
-    openPage() {
+  getNewCard() {
     console.log('new flashcard loaded');
     this.navCtrl.setRoot(this.navCtrl.getActive().component);
   }
