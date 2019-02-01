@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 /**
- * Generated class for the InvestingFlashCardComponent component.
+ * Generated class for the EconomicsFlashCardComponent component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
@@ -12,11 +12,12 @@ import { Component } from '@angular/core';
 })
 export class InvestingFlashCardComponent {
 
-  text: string;
+	flipped: boolean = false;
 
-  constructor() {
-    console.log('Hello InvestingFlashCardComponent Component');
-    this.text = 'Hello World';
-  }
+	constructor() {}
+
+	flip(){
+		this.flipped = !this.flipped;
+	}
 
 }

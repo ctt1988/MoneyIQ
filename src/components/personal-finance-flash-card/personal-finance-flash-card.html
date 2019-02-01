@@ -1,4 +1,11 @@
-<!-- Generated template for the PersonalFinanceFlashCardComponent component -->
-<div>
-  {{text}}
+<!-- Generated template for the EconomicsFlashCardComponent component -->
+<div class="flip-container" (click)="flip()" [class.flipped]="flipped">
+    <div class="flipper">
+        <div class="front">
+            <ng-content select=".personal-finance-flash-card-front"></ng-content>
+        </div>
+        <div class="back">
+            <ng-content select=".personal-finance-flash-card-back"></ng-content>
+        </div>
+    </div>
 </div>

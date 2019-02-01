@@ -1,22 +1,23 @@
 import { Component } from '@angular/core';
 
 /**
- * Generated class for the RealEstateFlashCardComponent component.
+ * Generated class for the EconomicsFlashCardComponent component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
 @Component({
   selector: 'real-estate-flash-card',
-  templateUrl: 'real-estate-flash-card.html'
+  templateUrl: 'real-state-flash-card.html'
 })
 export class RealEstateFlashCardComponent {
 
-  text: string;
+	flipped: boolean = false;
 
-  constructor() {
-    console.log('Hello RealEstateFlashCardComponent Component');
-    this.text = 'Hello World';
-  }
+	constructor() {}
+
+	flip(){
+		this.flipped = !this.flipped;
+	}
 
 }

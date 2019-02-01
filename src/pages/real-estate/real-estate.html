@@ -1,5 +1,5 @@
 <!--
-  Generated template for the RealEstatePage page.
+  Generated template for the EconomicsPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -13,7 +13,10 @@
   </ion-navbar>
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content>
+    <real-estate-flash-card>
+        <div class="real-estate-flash-card-front">{{ randomCard.front }}</div>
+        <div class="real-estate-flash-card-back">{{ randomCard.back }}</div>
+    </real-estate-flash-card>
+		<button class="randomizer-button" type="button" (click)="openPage()">Random card</button>
 </ion-content>

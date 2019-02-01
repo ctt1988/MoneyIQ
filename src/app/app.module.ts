@@ -11,6 +11,10 @@ import { RetirementPage } from '../pages/retirement/retirement';
 import { RealEstatePage } from '../pages/real-estate/real-estate';
 
 import { EconomicsFlashCardComponent } from '../components/economics-flash-card/economics-flash-card';
+import { InvestingFlashCardComponent } from '../components/investing-flash-card/investing-flash-card';
+import { PersonalFinanceFlashCardComponent } from '../components/personal-finance-flash-card/personal-finance-flash-card';
+import { RealEstateFlashCardComponent } from '../components/real-estate-flash-card/real-estate-flash-card';
+import { RetirementFlashCardComponent } from '../components/retirement-flash-card/retirement-flash-card';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
