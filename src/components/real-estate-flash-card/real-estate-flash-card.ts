@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
  */
 @Component({
   selector: 'real-estate-flash-card',
-  templateUrl: 'real-state-flash-card.html'
+  templateUrl: 'real-estate-flash-card.html'
 })
 export class RealEstateFlashCardComponent {
 

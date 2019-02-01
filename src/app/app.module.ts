@@ -4,11 +4,12 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { PersonalFinancePage } from '../pages/personal-finance/personal-finance';
-import { InvestingPage } from '../pages/investing/investing';
+
 import { EconomicsPage } from '../pages/economics/economics';
-import { RetirementPage } from '../pages/retirement/retirement';
+import { InvestingPage } from '../pages/investing/investing';
+import { PersonalFinancePage } from '../pages/personal-finance/personal-finance';
 import { RealEstatePage } from '../pages/real-estate/real-estate';
+import { RetirementPage } from '../pages/retirement/retirement';
 
 import { EconomicsFlashCardComponent } from '../components/economics-flash-card/economics-flash-card';
 import { InvestingFlashCardComponent } from '../components/investing-flash-card/investing-flash-card';
@@ -23,12 +24,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    PersonalFinancePage,
-    InvestingPage,
     EconomicsPage,
-    RetirementPage,
+    InvestingPage,
+    PersonalFinancePage,
     RealEstatePage,
-    EconomicsFlashCardComponent
+    RetirementPage,
+    EconomicsFlashCardComponent,
+    InvestingFlashCardComponent,
+    PersonalFinanceFlashCardComponent,
+    RealEstateFlashCardComponent,
+    RetirementFlashCardComponent
   ],
   imports: [
     BrowserModule,
@@ -38,11 +43,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    PersonalFinancePage,
-    InvestingPage,
     EconomicsPage,
-    RetirementPage,
-    RealEstatePage
+    InvestingPage,
+    PersonalFinancePage,
+    RealEstatePage,
+    RetirementPage
+    
   ],
   providers: [
     StatusBar,
