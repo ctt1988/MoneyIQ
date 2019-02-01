@@ -38,7 +38,7 @@ export class EconomicsPage {
   }
 
     openPage() {
-    console.log('page');
+    console.log('new flashcard loaded');
     this.navCtrl.setRoot(this.navCtrl.getActive().component);
   }
 
