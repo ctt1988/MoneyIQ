@@ -13,7 +13,10 @@
   </ion-navbar>
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content>
+    <economics-flash-card>
+        <div class="economics-flash-card-front">{{ randomCard.front }}</div>
+        <div class="economics-flash-card-back">{{ randomCard.back }}</div>
+    </economics-flash-card>
+		<button class="randomizer-button" type="button" (click)="openPage()">Random card</button>
 </ion-content>

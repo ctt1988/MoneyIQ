@@ -10,6 +10,8 @@ import { EconomicsPage } from '../pages/economics/economics';
 import { RetirementPage } from '../pages/retirement/retirement';
 import { RealEstatePage } from '../pages/real-estate/real-estate';
 
+import { EconomicsFlashCardComponent } from '../components/economics-flash-card/economics-flash-card';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -21,7 +23,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     InvestingPage,
     EconomicsPage,
     RetirementPage,
-    RealEstatePage
+    RealEstatePage,
+    EconomicsFlashCardComponent
   ],
   imports: [
     BrowserModule,
