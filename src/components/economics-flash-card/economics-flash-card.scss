@@ -2,10 +2,6 @@
  
     economics-flash-card {
  
-        /*
-         *  Flip animation by David Walsh: https://davidwalsh.name/css-flip
-         */
- 
         /* entire container, keeps perspective */
         .flip-container {
             perspective: 1000px;
@@ -59,6 +55,18 @@
             transform: rotateY(180deg);
         }
  
+    }
+
+    .multi-choice-row {
+            
+    }
+    
+    .multi-choice-button{
+            background-color: #ecf0f1;
+            width: 200px;
+            height: 25px;
+            margin: 0 auto;
+            text-align: center;
     }
  
 }
