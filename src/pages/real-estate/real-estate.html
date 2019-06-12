@@ -17,6 +17,11 @@
     <real-estate-flash-card>
         <div class="real-estate-flash-card-front">{{ randomCard.front }}</div>
         <div class="real-estate-flash-card-back">{{ randomCard.back }}</div>
+        <div class="multi-box-1" type="button" (click)="getResultsBox1()">{{ randomCard.box1 }}</div>
+        <div class="multi-box-2" type="button" (click)="getResultsBox2()">{{ randomCard.box2 }}</div>
+        <div class="multi-box-3" type="button" (click)="getResultsBox3()">{{ randomCard.box3 }}</div>
+        <div class="multi-box-4" type="button" (click)="getResultsBox4()">{{ randomCard.box4 }}</div>
     </real-estate-flash-card>
+    
 		<button class="randomizer-button" type="button" (click)="getNewCard()">Random card</button>
 </ion-content>
