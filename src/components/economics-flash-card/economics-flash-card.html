@@ -10,27 +10,20 @@
     </div>
 </div>
 
-    <ion-grid class="multi-choice-row" (click)="flip()" [class.flipped]="flipped">
-      <ion-row>
-       <ion-col>
-         <div class ="multi-choice-button">
-          1 of 4
-        </div>
-       </ion-col>
-       <ion-col>
-         <div class ="multi-choice-button">
-          2 of 4
-        </div>
-       </ion-col>
-       <ion-col>
-         <div class ="multi-choice-button">
-          3 of 4
-        </div>
-       </ion-col>
-       <ion-col>
-         <div class ="multi-choice-button">
-          4 of 4
-        </div>
-       </ion-col>
-      </ion-row>
-    </ion-grid>
+
+<ion-grid class="multi-choice-row" (click)="flip()" [class.flipped]="flipped">
+  <ion-row>
+   <ion-col>
+     <ng-content select=".multi-box-1"></ng-content>
+   </ion-col>
+   <ion-col>
+     <ng-content select=".multi-box-2"></ng-content>
+   </ion-col>
+      <ion-col>
+     <ng-content select=".multi-box-3"></ng-content>
+   </ion-col>
+      <ion-col>
+     <ng-content select=".multi-box-4"></ng-content>
+   </ion-col>
+  </ion-row>
+</ion-grid>
