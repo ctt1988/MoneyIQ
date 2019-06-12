@@ -1,5 +1,5 @@
 <!-- Generated template for the EconomicsFlashCardComponent component -->
-<div class="flip-container" (click)="flip()" [class.flipped]="flipped">
+<div class="flip-container" [class.flipped]="flipped">
     <div class="flipper">
         <div class="front">
             <ng-content select=".retirement-flash-card-front"></ng-content>
@@ -9,3 +9,21 @@
         </div>
     </div>
 </div>
+
+
+<ion-grid class="multi-choice-row" (click)="flip()" [class.flipped]="flipped">
+  <ion-row>
+   <ion-col>
+     <ng-content select=".multi-box-1"></ng-content>
+   </ion-col>
+   <ion-col>
+     <ng-content select=".multi-box-2"></ng-content>
+   </ion-col>
+      <ion-col>
+     <ng-content select=".multi-box-3"></ng-content>
+   </ion-col>
+      <ion-col>
+     <ng-content select=".multi-box-4"></ng-content>
+   </ion-col>
+  </ion-row>
+</ion-grid>
