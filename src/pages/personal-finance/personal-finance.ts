@@ -29,7 +29,7 @@ export class PersonalFinancePage {
   }
 
     getResultsBox1() {
-    var result = document.getElementsByClassName("multi-box-1");
+    var result = document.getElementsByClassName("multi-box-1") as HTMLCollectionOf<HTMLElement>;
     if(this.randomCard.back===this.randomCard.box1){
       console.log('correct answer!');
       result[0].style.backgroundColor = "green";
@@ -42,7 +42,7 @@ export class PersonalFinancePage {
   }
 
     getResultsBox2() {
-    var result = document.getElementsByClassName("multi-box-2");
+    var result = document.getElementsByClassName("multi-box-2") as HTMLCollectionOf<HTMLElement>;
     if(this.randomCard.back===this.randomCard.box2){
       console.log('correct answer!');
       result[0].style.backgroundColor = "green";
@@ -55,7 +55,7 @@ export class PersonalFinancePage {
   }
 
     getResultsBox3() {
-    var result = document.getElementsByClassName("multi-box-3");
+    var result = document.getElementsByClassName("multi-box-3") as HTMLCollectionOf<HTMLElement>;
     if(this.randomCard.back===this.randomCard.box3){
       console.log('correct answer!');
       result[0].style.backgroundColor = "green";
@@ -68,7 +68,7 @@ export class PersonalFinancePage {
   }
 
     getResultsBox4() {
-    var result = document.getElementsByClassName("multi-box-4");
+    var result = document.getElementsByClassName("multi-box-4") as HTMLCollectionOf<HTMLElement>;
     if(this.randomCard.back===this.randomCard.box4){
       console.log('correct answer!');
       result[0].style.backgroundColor = "green";
