@@ -19,7 +19,11 @@ export class PersonalFinancePage {
   public randomCard: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.flashCardsArray.push({front: 'What is APR?', back: 'Annual Percentage Rate', box1: 'Annual Price Raise', box2: 'Annual Percentage Rate', box3: 'Automatic Prime Rate', box4: 'Accelerated Prime Realty'});
+    this.flashCardsArray.push({front: 'This account allows you to withdraw money immediately.', back: 'Checking', box1: 'Savings', box2: 'Checking', box3: 'Credit', box4: 'Equity'});
+    this.flashCardsArray.push({front: 'This payment must be made to the lender, monthly on your home.', back: 'Mortgage', box1: 'Rent', box2: 'Collateral', box3: 'Principal', box4: 'Mortgage'});
+    this.flashCardsArray.push({front: 'By keeping your money in a savings account you receive this periodic return.', back: 'Interest', box1: 'Interest', box2: 'Credit', box3: 'Dividends', box4: 'Stocks'});
+    this.flashCardsArray.push({front: 'A plan outlining expenses and revenue of a household.', back: 'Budget', box1: 'Ladder', box2: 'Bill of Sale', box3: 'Budget', box4: 'Lien'});
+    this.flashCardsArray.push({front: 'Occurs when withdrawals have gone over the current account balance.', back: 'Overdraft', box1: 'Investment', box2: 'Overdraft', box3: 'Payment Notice', box4: 'Liquidation'});
 
     this.randomCard = this.flashCardsArray[Math.floor(Math.random() * this.flashCardsArray.length)];
   }

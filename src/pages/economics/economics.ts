@@ -19,7 +19,11 @@ export class EconomicsPage {
   public randomCard: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  	this.flashCardsArray.push({front: 'What is APR?', back: 'Annual Percentage Rate', box1: 'Annual Price Raise', box2: 'Annual Percentage Rate', box3: 'Automatic Prime Rate', box4: 'Accelerated Prime Realty'});
+  	this.flashCardsArray.push({front: 'Someone who makes a good or service.', back: 'Producer', box1: 'Banker', box2: 'Agent', box3: 'Producer', box4: 'Lender'});
+    this.flashCardsArray.push({front: 'Someone who buys a good or service.', back: 'Consumer', box1: 'Consumer', box2: 'Arbitrator', box3: 'Chancellor', box4: 'Investor'});
+    this.flashCardsArray.push({front: 'The abbreviation of country’s yearly measured productivity.', back: 'GDP', box1: 'ADP', box2: 'GDP', box3: 'NDP', box4: 'COD'});
+    this.flashCardsArray.push({front: 'Goods from a foreign country that are brought into a country for sale.', back: 'Imports', box1: 'Bulk', box2: 'Currency', box3: 'Imports', box4: 'Exports'});
+    this.flashCardsArray.push({front: 'The use of goods and services.', back: 'Consumption', box1: 'Skimming', box2: 'Production', box3: 'Consumption', box4: 'Audit'});
 
     this.randomCard = this.flashCardsArray[Math.floor(Math.random() * this.flashCardsArray.length)];
   }

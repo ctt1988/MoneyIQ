@@ -19,7 +19,11 @@ export class InvestingPage {
   public randomCard: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.flashCardsArray.push({front: 'What is APR?', back: 'Annual Percentage Rate', box1: 'Annual Price Raise', box2: 'Annual Percentage Rate', box3: 'Automatic Prime Rate', box4: 'Accelerated Prime Realty'});
+    this.flashCardsArray.push({front: 'You receive these returns in cash periodically.', back: 'Dividend', box1: 'Stocks', box2: 'Gold', box3: 'Dividend', box4: 'Credit'});
+    this.flashCardsArray.push({front: 'This is what a collection of diversified stocks is commonly referred to as.', back: 'Portfolio', box1: 'Account', box2: 'Lot', box3: 'Trade', box4: 'Portfolio'});
+    this.flashCardsArray.push({front: 'This certificate guarantees a return on investment.', back: 'Bond', box1: 'Bond', box2: 'Mutual Fund', box3: 'Blue Chip Stock', box4: 'Commodity'});
+    this.flashCardsArray.push({front: 'The official symbol of a stock.', back: 'Ticker', box1: 'Brand', box2: 'Ticker', box3: 'NYSE', box4: 'Price'});
+    this.flashCardsArray.push({front: 'An average price of multiple stocks.', back: 'Index', box1: 'Lead', box2: 'Bid', box3: 'Index', box4: 'Starter'});
 
     this.randomCard = this.flashCardsArray[Math.floor(Math.random() * this.flashCardsArray.length)];
   }
